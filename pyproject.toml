@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "multiasset-strat"
+version = "0.1.0"
+description = "Systematic multi-asset strategy (signals, selection, risk budgeting, turnover rules) on top of portopt."
+requires-python = ">=3.10"
+dependencies = [
+    "portopt @ git+https://github.com/jeanphilippecedricndri-sudo/portfolio-opt",
+    "numpy>=1.24", "pandas>=2.0", "scipy>=1.10", "matplotlib>=3.7", "yfinance>=0.2.40",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+include = ["strat*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,22 @@
+# personal portfolio state (real holdings, order amounts): never published
+portfolio/
+
+# generated at each run (report, target weights, orders, charts)
+outputs/
+
+# cached Yahoo prices (re-downloaded on demand)
+data_cache/
+
+*.egg-info/
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+.DS_Store
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
